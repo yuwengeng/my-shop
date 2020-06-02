@@ -3,13 +3,10 @@ import {connect} from 'react-redux';
 import {withRouter, NavLink} from 'react-router-dom';
 import {Icon} from 'antd';
 
-class NavBottom extends React.Component {
-    constructor(props, context) {
-        super(props, context);
-    }
-
-    render() {
-        return <footer className='footerNavBox'>
+function NavBottom(){
+    
+        return (
+        <footer className='footerNavBox'>
             <NavLink to='/course'>
                 <Icon type='home'/>
                 <span>首页</span>
@@ -22,8 +19,8 @@ class NavBottom extends React.Component {
                 <Icon type='user'/>
                 <span>个人中心</span>
             </NavLink>
-        </footer>;
-    }
+        </footer>);
+    
 }
 
 export default withRouter(connect()(NavBottom));
