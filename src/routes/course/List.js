@@ -17,6 +17,7 @@ class List extends React.Component {
         }
         if (courseData.data.length === 0) {
             queryList();//=>DISPATCH
+            // console.log(courseData.data.length)
         }
     }
 

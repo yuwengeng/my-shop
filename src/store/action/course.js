@@ -20,6 +20,7 @@ let course = {
                 page,
                 type
             });
+            console.log("结果:",result)
             dispatch({
                 type: TYPES.COURSE_QUERY_LIST,
                 result,
